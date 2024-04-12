@@ -27,5 +27,5 @@ If you encounter any problems while running these tutorials, please do not hesit
 ## Happy SpaDESing!
   
   
-  ![](figures/spades_logo.png)
+  ![](figures/SpaDES.jpg)
 
