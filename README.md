@@ -2,6 +2,8 @@
 # Creating and integrating simple models in SpaDES
 ## by *Tati Micheletti*    
 
+[![DOI](https://zenodo.org/badge/785653054.svg)](https://zenodo.org/doi/10.5281/zenodo.10968619)
+
 2024-03-21
 
 
