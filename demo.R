@@ -2,7 +2,7 @@
 
 # Before Starting:
 
-# 1. Install/Update R: 4.3.2
+# 1. Install/Update R: >= 4.3.1
 
 # 2. Make sure you have the support for the spatial package 'terra'. Depending on 
 # your system, you will need to install GDAL libraries and Rcpp before running the 
@@ -10,10 +10,10 @@
 # Please see details for installing these here: https://rspatial.github.io/terra/
 
 # 3. Setting the project's directory. A folder named integratingSpaDESmodules will be created in it with all project elements
-setwd("~") # here please set the home folder where the demo should live. 
+setwd("~") # here please set the home folder where the demo should live. Alternatively , provide the full path to the project folder in PART II, 
+           # as `projectPath = "C:/Path/To/Folder/integratingSpaDESModules"`
 
-# /!\ IMPORTANT /!\  Please Make sure the current file is saved in the folder specified above
-message(paste0("Please Make sure the current file is saved in the folder specified above (",getwd(),")"))
+# /!\ IMPORTANT /!\  Please Make sure the current file is saved.
 
 # 4. Run the code:
 
@@ -39,9 +39,7 @@ getOrUpdatePkg("SpaDES.project", "0.0.8.9040")
 
 Setup <- SpaDES.project::setupProject(
   
-  paths = list(projectPath = "integratingSpaDESmodules",
-               modulePath = "SpaDES_Modules",
-               outputPath = "outputs"),
+  paths = list(projectPath = "integratingSpaDESmodules"),
   
   modules = c("tati-micheletti/speciesAbundance@main",
               "tati-micheletti/temperature@main",
